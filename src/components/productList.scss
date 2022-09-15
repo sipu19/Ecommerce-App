@@ -1,0 +1,44 @@
+.productList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    position: relative;
+    padding: 1rem;
+    background: linear-gradient(0deg, #ccc 85%, transparent);
+  
+    &::after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+    .card{
+      background-color: whitesmoke;
+      padding: 20px;
+      box-shadow: 0 0 10px rgb(111, 199, 229);
+    }
+  
+    .imageHolder{
+      text-align: center;
+      position: relative;
+      >img{
+        width: auto;
+        max-height: 250px;
+        object-fit: contain;
+        box-shadow:0 0 10px #787a7b;
+      }
+      button{
+        padding: 5px;
+        color: rgb(19, 18, 18);
+        
+        background-color: deepskyblue;
+        border: 1px solid black;
+        padding: 5px 10px;
+        font-weight: bolder;
+        border-style: none;
+        box-shadow:0 0 10px #565757;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+  }
